@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{overflow-y: hidden;} 
+#barra_lateral{
+    border: black 1px solid;
+    width: 18vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    
+}
+#barra_lateral h1{
+    padding: 3vh;
+    font-size: 44pt;
+    
+    
+}
+
+.cont_nav{
+    font-size: 22pt;
+    margin-left: 15px;
+    margin-top: 3px;
+    
+    
+}
+
+#nav_lateral{
+    flex-direction: column;
+    display: flex;
+    width: 16vw;
+    height: 70vh;
+    border: solid rgba(0, 0, 0, 0.381) 2px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.436);
+    
+    
+}
+.icn_lat{
+    
+    height: 2.9vh;
+    width: 1.8vw;
+}
+.incaps_lat{
+    display: flex;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 5vh;
+    
+}
