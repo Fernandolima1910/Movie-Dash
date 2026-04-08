@@ -11,7 +11,7 @@ body{
 #barra_lateral{
     border: #000000 1px solid;
     width: 20vw;
-    height: 99.8vh;
+    height: 98.5vh;
     justify-content: center;
     align-self: center;
 
@@ -237,8 +237,7 @@ main{
 /* sessão assistir com alguem */
 
 #assitir_com_alguem{
-    margin-top: 2%;
-    background-color: rgb(39, 23, 147);
+    margin-top: 1%;
     height: 35vh;
 }
 #assistir_com_alg_titulo{
@@ -256,4 +255,67 @@ main{
     font-size: 30pt;
     margin-left: 2%;
     text-align: center;
+    cursor: default;
 }
+#assitir_com_alguem_btn{
+    height: 27vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#assitir_com_alguem_btn img{
+    height: 20vh;
+}
+.assistir_botoes{
+    height: 85%;
+    width: 35%;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assistir_botoes p {
+    font-size: 15pt;
+    margin-bottom: 5px;
+    
+}
+
+/* assistidos */
+
+#assistidos{
+
+    height: 24%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#tit_assist{
+    font-size: 18pt;
+}
+#minha_lista{
+
+    height: 22.3vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.und_list{
+    height: 18vh;
+    width: 9vw;
+    border: 1px solid rgba(0, 0, 0, 0.408);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.432);
+    /* alterar */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+     /* alterar */
+
+}
+
