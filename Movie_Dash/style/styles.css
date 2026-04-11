@@ -1,14 +1,46 @@
+/* Importando a fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.moviedash-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px; /* ajuste conforme necessário para o topo da sidebar */
+  font-weight: 900;
+  letter-spacing: -2px; /* Espaçamento apertado para criar o bloco visual */
+  display: inline-block;
+  cursor: pointer;
+  
+  /* Gradiente sutil para profundidade (como na logo da Netflix) */
+  background: linear-gradient(180deg, #E50914 0%, #B20710 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Efeito de curva sutil na parte inferior */
+  transform: scaleX(1.05);
+}
+
+.m-letter {
+  /* Adicionando um leve efeito 3D ou curva sutil na primeira letra */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.d-letter {
+  /* Toque de cor diferente para o "Dash" para dar dinamismo */
+  background: linear-gradient(180deg, #FFC107 0%, #E6AE06 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 *{
     margin: 0;
     padding: 0;
 }
 body{
     display: flex;
-    background-color:#F2F3F4;
+    background-color:#121212;
+    color: #E0E0E0;
     
 } 
 #barra_lateral{
-    border: #000000 1px solid;
+   
     width: 20vw;
     height: 99.6vh;
     justify-content: center;
@@ -16,61 +48,77 @@ body{
     
 }
 #barra_lateral h1{
-    padding: 3vh;
+    padding: 2vh;
     font-size: 30pt;
     
 }
 .cont_nav{
-    font-size: 22pt;
+    font-size: 25pt;
     margin-left: 15px;
 }
 #nav_lateral{
+    background-color: #1E1E1E;
     flex-direction: column;
     display: flex;
-    width: 18vw;
+    width: 19.63vw;
     height: 70%;
+    justify-content: space-evenly;
     border: solid rgba(0, 0, 0, 0.381) 2px;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.436);  
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.436); 
+    color: #E0E0E0; 
     
 }
 .icn_lat{
-
+    filter: invert(34%) sepia(87%) saturate(2853%) hue-rotate(238deg) brightness(88%) contrast(85%);
     height: 2.9vh;
     width: 1.8vw;
     margin-top: 2%;
-}
-.incaps_lat{
-    display: flex;
-    text-align: center;
-    margin-left: 15px;
-    margin-top: 10%;
-    cursor: pointer;
     
 }
+
+/* fazer um id para cada incapsulamento e seguir de 1 ao 6 */
+.incaps_lat{
+    display: flex;
+    cursor: pointer;
+    margin-left: 20px;
+}
+#home{   
+    display: flex; 
+    width:75%;
+    
+}
+#home:hover {
+    margin-left: 15px;
+    background-color: #ccc;
+    
+}
+
 main{
     width: 100vw;
     height: 100vh;
 }
-#container{
-    display: flex;
-    height: 40vh;
-    border-bottom: solid 1px;
-}
 #botao_panico{
-    height: 15.5%;
+    height: 23%;
     display: flex;
     align-items: center;
     cursor: pointer;
+    
 }
 #botao_panico p{
-    font-size: 22pt;
+    font-size: 28pt;
+    color: red;
     text-align: center;
 }
 #img_panico{
-    height: 10vh;
+    height: 11vh;
 }
 /*  lado direito*/
+#container{
+    display: flex;
+    height: 40vh;
+
+}
 #catalago_filme{
     display: flex;
     flex-direction: column;
@@ -83,14 +131,14 @@ main{
     height: 28vh;
     width: 38vw;
     border-radius: 20px;
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25pt;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.463);
-    border:1px solid rgba(0, 0, 0, 0.429);
+    border:1px solid rgba(196, 196, 196, 0.429);
     cursor: pointer;
+    background-color: #1E1E1E;
 }
 #tit_film{
     width: 100%;
@@ -123,8 +171,9 @@ main{
     justify-content: center;
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.757);
-    border: 1px solid rgba(0, 0, 0, 0.309);
+   border: 1px solid rgba(255, 249, 249, 0.404);
     cursor: pointer;
+    background-color: #1E1E1E;
 }
 #btn_escolha_mais_tarde{
     display: flex;
@@ -135,8 +184,9 @@ main{
     justify-content: center;
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.757);
-    border: 1px solid rgba(0, 0, 0, 0.309);
+    border: 1px solid rgba(255, 249, 249, 0.404);
     cursor: pointer;
+    background-color: #1E1E1E;
 }
 #btn_escolha_info{
     display: flex;
@@ -148,8 +198,9 @@ main{
     justify-content: center;
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.757);
-    border: 1px solid rgba(0, 0, 0, 0.309);
+    border: 1px solid rgba(255, 249, 249, 0.404);
     cursor: pointer;
+    background-color: #1E1E1E;
 }
 .incaps_img_escolha{
     height: 2.6vh;
@@ -188,9 +239,11 @@ main{
 #lista_logos img{
     height: 100%;
     width: auto;
-    filter:drop-shadow( 0px 0px 10px rgba(0, 0, 0, 0.504));
     border-radius: 5px;
     cursor: pointer;
+}
+#HBO_max{
+    filter: invert(13%) sepia(99%) saturate(7183%) hue-rotate(264deg) brightness(101%) contrast(106%);
 }
 #lista_selecao_pedidos{
  height: 30vh;
@@ -199,9 +252,10 @@ main{
  justify-content: space-evenly;
 }
 .selecao{
+    background-color: #1E1E1E;
     height: 90%;
     width: 10vw ;  
-    border: solid 1px rgba(0, 0, 0, 0.446);
+     border: 1px solid rgba(255, 249, 249, 0.404);
     border-radius: 20px;
     box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.444);
     cursor: pointer;
@@ -213,7 +267,9 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
+
 .img_selecao{
     height: 40%;
     display: flex;
@@ -222,12 +278,13 @@ main{
 }
 .img_selecao img{
     height: 80%;
-    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.381));
+    filter: invert(85%) sepia(35%) saturate(5894%) hue-rotate(359deg) brightness(103%) contrast(103%);
     
 }
 .selecao p{
     text-align: center;
     font-size: 15pt;
+    color: #A0A0A0;
     gap: 10px;
 }
 /* sessão assistir com alguem */
@@ -252,6 +309,7 @@ main{
     margin-left: 2%;
     text-align: center;
     cursor: default;
+    color: #A0A0A0;
 }
 #assitir_com_alguem_btn{
     height: 27vh;
@@ -259,9 +317,6 @@ main{
     justify-content: space-around;
     align-items: center;
     
-}
-#assitir_com_alguem_btn img{
-    height: 20vh;
 }
 .assistir_botoes{
     height: 85%;
@@ -274,10 +329,19 @@ main{
     justify-content: center;
     align-items: center;
 }
+.assistir_botoes img{
+    height: 20vh;
+    filter: invert(34%) sepia(87%) saturate(2853%) hue-rotate(238deg) brightness(88%) contrast(85%);
+}
 
 .assistir_botoes p {
     font-size: 18pt;
     margin-bottom: 25px;   
+     filter: invert(34%) sepia(87%) saturate(2853%) hue-rotate(238deg) brightness(88%) contrast(85%);
+}
+#assistir_casal_centro{
+    height: 15vh;
+    filter: invert(85%) sepia(35%) saturate(5894%) hue-rotate(359deg) brightness(103%) contrast(103%);
 }
 
 /* assistidos */
@@ -320,6 +384,7 @@ main{
     flex-shrink: 0;
     height: 15vh;
     width: 6vw;
+    background-color: #1E1E1E;
     
     border: 1px solid rgba(0, 0, 0, 0.408);
     border-radius: 24px;
