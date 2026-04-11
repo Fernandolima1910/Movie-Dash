@@ -1,0 +1,50 @@
+Com certeza! Aqui está o Guia de Estilo (Style Guide) técnico para o seu código. Separei as cores por categorias e especifiquei exatamente onde cada uma deve ser aplicada no CSS ou no seu arquivo de temas.
+
+🎨 Guia de Cores: MovieDash
+1. Fundo e Estrutura (Surface)
+Estas cores definem a base do site e a hierarquia de profundidade.
+
+Cor: #121212 (Preto profundo)
+
+Onde usar: background-color do corpo da página (body) e da barra lateral (sidebar).
+
+Cor: #1E1E1E (Cinza Elevado)
+
+Onde usar: Fundo de cards, modais, seção "Match Night" e campos de busca. É para elementos que ficam "em cima" do fundo principal.
+
+2. Navegação Lateral (Sidebar)
+As cores que escolhemos para dar aquele toque premium e misterioso.
+
+Cor: #6C4FCF (Violeta Deep)
+
+Onde usar: Ícones e textos dos links de navegação (Home, Pesquisa, Perfil, Watchlist). Use também no :hover desses itens com uma opacidade leve.
+
+Cor: #E50914 (Vermelho Alerta)
+
+Onde usar: Exclusivamente no Botão de Pânico. Use no background-color do botão para ele se destacar de todo o resto da barra violeta.
+
+3. Tipografia (Textos)
+Para garantir que a leitura seja confortável e não canse a vista.
+
+Cor: #E0E0E0 (Cinza Off-White)
+
+Onde usar: Títulos principais (h1, h2), nomes de filmes e textos importantes.
+
+Cor: #A0A0A0 (Cinza Muted)
+
+Onde usar: Textos secundários, sinopses, durações (ex: "1h 30min") e legendas de ícones.
+
+4. Ações e Destaques (Accents)
+Cores para botões de ação e ícones de categoria.
+
+Cor: #E50914 (Vermelho Cinema)
+
+Onde usar: Botão "Assistir Agora" (Play) e botões de confirmação.
+
+Cor: #FFC107 (Amarelo Ouro)
+
+Onde usar: Estrelas de avaliação, ícones do menu "Uber Eats" (Lanches, Prato Principal) e badges de conquistas.
+
+Cor: #333333 (Cinza de Borda)
+
+Onde usar: Propriedade border-color para separar suavemente as seções ou contornar inputs.

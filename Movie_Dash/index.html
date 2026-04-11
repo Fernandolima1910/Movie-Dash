@@ -10,30 +10,33 @@
 <body>
     <nav id="barra_lateral">
     
-        <h1>Movie Dash</h1>
+       <div class="moviedash-logo">
+  <span class="m-letter">M</span><span class=" rest-letters">ovie</span><span class="d-letter">D</span><span class="rest-letters">ash</span>
+</div>
 
         <div id="nav_lateral">
-        <div class="incaps_lat">
-            <img src="./Imagens/casa.png" class="icn_lat" />
-            <div class="cont_nav">Home</div>
+        <div class="incaps_lat" onclick="acess_home()" >
+            <div id="home">
+                <img src="./Imagens/casa.png" class="icn_lat">
+                <div class="cont_nav">Home </div>
+            </div>
         </div>
-        <div class="incaps_lat">
+        <div class="incaps_lat" onclick="acess_search()">
             <img src="./Imagens/lupa.png" class="icn_lat" />
             <div class="cont_nav">Pesquisar</div>
         </div>
-        <div class="incaps_lat">
+        <div class="incaps_lat" onclick="acess_profile()">
             <img src="./Imagens/do-utilizador.png" class="icn_lat" />
             <div class="cont_nav">Perfil</div>
         </div>
-        <div class="incaps_lat">
+        <div class="incaps_lat" onclick="acess_watchlist()">
             <img src="./Imagens/mais.png" class="icn_lat" />
             <div class="cont_nav">Lista de assistidos</div>
         </div>
-        <div class="incaps_lat">
-            <img src="./Imagens/pessoas.png" class="icn_lat" />
+        <div class="incaps_lat" onclick="acess_match_room()">            <img src="./Imagens/pessoas.png" class="icn_lat" />
             <div class="cont_nav">Match Room</div>
         </div>
-        <div class="incaps_lat">
+        <div class="incaps_lat" onclick="acess_speanding()">
             <img src="./Imagens/dinheiro.png" class="icn_lat" />
             <div class="cont_nav">Analise de gastos</div>
         </div>
@@ -99,7 +102,7 @@
                 src="./Imagens/Amazon_Prime_Video_logo_(2024).svg"
                 alt="Logo da Prime video "
               />
-              <img src="./Imagens/HBO_Max_(2025).svg" alt="Logo da Max " />
+              <img id="HBO_max" src="./Imagens/HBO_Max_(2025).svg" alt="Logo da Max " />
             </div>
 
             <div id="lista_selecao_pedidos">
@@ -112,7 +115,7 @@
 
                             <p>
                             <strong>Entradas</strong> <br />
-                            <g>Duração + 90 min</g>
+                            Duração + 90 min
                             </p>
                     </div>
             </div>
@@ -163,7 +166,7 @@
 
                 </div>
 
-                <img src="./Imagens/casal.png" alt="icones de duas pessoas">
+                <img id="assistir_casal_centro" src="./Imagens/casal.png" alt="icones de duas pessoas">
 
                 <div class="assistir_botoes">
                         <img class="img_assistir_btn" src="./Imagens/corrente (1).png" alt="Icone de uma corrente">
@@ -206,5 +209,6 @@
      </div>
 
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
