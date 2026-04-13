@@ -5,9 +5,12 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 48px; /* ajuste conforme necessário para o topo da sidebar */
   font-weight: 900;
-  letter-spacing: -2px; /* Espaçamento apertado para criar o bloco visual */
+  letter-spacing: -1px; /* Espaçamento apertado para criar o bloco visual */
   display: inline-block;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   
   /* Gradiente sutil para profundidade (como na logo da Netflix) */
   background: linear-gradient(180deg, #E50914 0%, #B20710 100%);
@@ -71,8 +74,8 @@ body{
 }
 .icn_lat{
     filter: invert(34%) sepia(87%) saturate(2853%) hue-rotate(238deg) brightness(88%) contrast(85%);
-    height: 2.9vh;
-    width: 1.8vw;
+    height: 4.3vh;
+    width: 2vw;
     margin-top: 2%;
     
 }
@@ -85,14 +88,118 @@ body{
 }
 #home{   
     display: flex; 
-    width:75%;
+    width:53%;
+    transition: all 0.3s ease;
+    border-radius: 15px ;
+    padding: 2%;
+    align-items: center;
     
 }
 #home:hover {
     margin-left: 15px;
-    background-color: #ccc;
+    background-color: #3b3b3bb9;
+    border-radius: 15px;
+    width: 45% ;
+    border: solid #121212c2;
+    padding: 2%;
+    
     
 }
+#pesquisar{   
+    display: flex; 
+    width:63%;
+    transition: all 0.3s ease;
+    border-radius: 15px ;
+    padding: 1%;
+    align-items: center;
+    
+}
+#pesquisar:hover {
+    margin-left: 15px;
+    background-color: #3b3b3bb9;
+    border-radius: 15px;
+    width: 55% ;
+    border: solid #121212c2;
+    padding: 2%;
+    
+    
+}
+#perfil{   
+    display: flex; 
+    width:47%;
+    transition: all 0.3s ease;
+    border-radius: 15px ;
+    padding: 1%;
+    align-items: center;
+    
+}
+#perfil:hover {
+    margin-left: 15px;
+    background-color: #3b3b3bb9;
+    border-radius: 15px;
+    width: 43% ;
+    border: solid #121212c2;
+    padding: 2%;
+    
+}
+#lista_de_assistidos{   
+    display: flex; 
+    width:93%;
+    transition: all 0.3s ease;
+    border-radius: 15px ;
+    padding: 1%;
+    align-items: center;
+    
+}
+#lista_de_assistidos:hover {
+    margin-left: 15px;
+    background-color: #3b3b3bb9;
+    border-radius: 15px;
+    width: 88% ;
+    border: solid #121212c2;
+    padding: 2%;
+    
+    
+}
+#match_room{   
+    display: flex; 
+    width:73%;
+    transition: all 0.3s ease;
+    border-radius: 15px ;
+    padding: 1%;
+    align-items: center;
+    
+}
+#match_room:hover {
+    margin-left: 15px;
+    background-color: #3b3b3bb9;
+    border-radius: 15px;
+    width: 68% ;
+    border: solid #121212c2;
+    padding: 2%;
+    
+    
+}
+#analise_de_gastos{   
+    display: flex; 
+    width:91%;
+    transition: all 0.3s ease;
+    border-radius: 15px ;
+    padding: 1%;
+    align-items: center;
+    
+}
+#analise_de_gastos:hover {
+    margin-left: 15px;
+    background-color: #3b3b3bb9;
+    border-radius: 15px;
+    width: 85% ;
+    border: solid #121212c2;
+    padding:2%;
+    
+    
+}
+
 
 main{
     width: 100vw;
@@ -103,8 +210,10 @@ main{
     display: flex;
     align-items: center;
     cursor: pointer;
+    background-color: #E6AE06
     
 }
+
 #botao_panico p{
     font-size: 28pt;
     color: red;
@@ -179,11 +288,16 @@ main{
     transition: all 0.3s ease-in-out;
 }
 #btn_escolha:hover{
-    width: 23%;
+    width: 26%;
     height: 5vh;
     border-radius: 15px;
     cursor: pointer;
     background-color: #e50914a9;
+}
+#btn_escolha:hover img{
+    height: 3vh ;
+    width: 1.7vw ;
+    filter: brightness(100) invert(5); 
 }
 #btn_escolha_mais_tarde{
     display: flex;
@@ -201,11 +315,16 @@ main{
     transition: all 0.2s ease-in-out;
 }
 #btn_escolha_mais_tarde:hover{
-    width: 30%;
+    width: 33%;
     height: 5vh;
     border-radius: 15px;
     cursor: pointer;
     background-color: #e50914a9;
+}
+#btn_escolha_mais_tarde:hover img{
+    height: 3vh ;
+    width: 1.7vw ;
+    filter: brightness(100) invert(5); 
 }
 #btn_escolha_info{
     display: flex;
@@ -230,11 +349,14 @@ main{
     height: 5vh;
     border-radius: 15px;
     cursor: pointer;
-    background-color: #e50914a9;
-    /* Filtro branco
-    filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);*/
+    background-color: #e50914a9; 
+   
     
-    
+}
+#btn_escolha_info:hover img{
+    height: 3vh ;
+    width: 1.7vw ;
+    filter: brightness(100) invert(5); 
 }
 
 
@@ -281,6 +403,7 @@ main{
     border-radius: 5px;
     cursor: pointer;
 }
+
 #HBO_max{
     filter: invert(13%) sepia(99%) saturate(7183%) hue-rotate(264deg) brightness(101%) contrast(106%);
 }
@@ -294,14 +417,23 @@ main{
     background-color: #1E1E1E;
     height: 90%;
     width: 10vw ;  
-     border: 1px solid rgba(255, 249, 249, 0.404);
+    border: 1px solid rgba(255, 249, 249, 0.404);
     border-radius: 20px;
     box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.444);
     cursor: pointer;
+    transition: all ease-in-out 0.2s;
     
 }
+.selecao:hover{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 92%;
+    width: 10.8vw ;
+    filter: blur(100) brightness(50);
+}
 .selecao_cont{
-    height: 90%;
+    height: 95%;
     width: 10vw ;
     display: flex;
     justify-content: center;
@@ -348,7 +480,8 @@ main{
     margin-left: 2%;
     text-align: center;
     cursor: default;
-    color: #A0A0A0;
+    color:  #E0E0E0; 
+;
 }
 #assitir_com_alguem_btn{
     height: 27vh;
@@ -356,21 +489,27 @@ main{
     justify-content: space-around;
     align-items: center;
     
+    
 }
 .assistir_botoes{
     height: 85%;
     width: 35%;
-    border: 1px solid;
+    border: 1px solid #333333;
     border-radius: 20px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all ease-in 0.2s;
 }
 .assistir_botoes img{
-    height: 20vh;
+    height: 85%;
     filter: invert(34%) sepia(87%) saturate(2853%) hue-rotate(238deg) brightness(88%) contrast(85%);
+}
+.assistir_botoes:hover{
+    height: 90%;
+    width: 38%;
 }
 
 .assistir_botoes p {
@@ -379,7 +518,7 @@ main{
      filter: invert(34%) sepia(87%) saturate(2853%) hue-rotate(238deg) brightness(88%) contrast(85%);
 }
 #assistir_casal_centro{
-    height: 15vh;
+    height: 60%;
     filter: invert(85%) sepia(35%) saturate(5894%) hue-rotate(359deg) brightness(103%) contrast(103%);
 }
 
@@ -400,7 +539,7 @@ main{
     font-size: 22pt;
     color: #E0E0E0;
 }#minha_lista{
-    height: 23vh;
+    height: 25vh;
     width: 80vw;
     display: flex;
     flex-direction: row;;
@@ -422,8 +561,9 @@ main{
 }
 .und_list{ 
     flex-shrink: 0;
-    height: 15vh;
-    width: 6vw;
+    height: 98%;
+    width: 6.8%;
+    transition: all ease-out 0.2s;
     background-color: #1E1E1E;
     color: #A0A0A0;
     border: 1px solid rgba(0, 0, 0, 0.408);
@@ -435,6 +575,12 @@ main{
     justify-content: center;
     display: flex;
      /* alterar */
+
+}
+.und_list:hover{
+    height: 105%;
+    width: 7%;
+    background-color: #3b3b3b;
 
 }
 
