@@ -205,16 +205,80 @@ main{
     width: 100vw;
     height: 100vh;
 }
-#botao_panico{
-    height: 23%;
+/* 1. Container Principal do Botão */
+#botao_panico {
+    height: 22.9vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
-    background-color: #E6AE06
-    
+    overflow: hidden;
+    position: relative;
+    border: none;
+    /* Suavização de renderização */
+    -webkit-font-smoothing: antialiased;
 }
 
-#botao_panico p{
+/* 2. Conteúdo Interno (O que vai balançar) */
+#cont_panico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    /* Configuração da Animação:
+       - 6 segundos: para ser bem elegante e nada robótico
+       - cubic-bezier: para uma aceleração orgânica (estilo 'seda')
+    */
+    animation: deslizeOnduladoPremium 6s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    
+    /* SOLUÇÕES ANTI-BLUR (NITIDEZ MÁXIMA) */
+    will-change: transform;
+    transform: translateZ(0); 
+    backface-visibility: hidden;
+    perspective: 1000;
+}
+
+/* 3. A Animação Fluida (Ondulação + Deslize) 
+      Usando os pontos que você sugeriu para evitar o aspecto mecânico
+*/
+@keyframes deslizeOnduladoPremium {
+    0%, 100% {
+        transform: translate(-10px, 0px) rotate(0deg);
+    }
+    13% {
+        transform: translate(-5px, -2px) rotate(0.3deg);
+    }
+    25% {
+        transform: translate(0px, -4px) rotate(0.6deg);
+    }
+    40% {
+        transform: translate(5px, -2px) rotate(0.3deg);
+    }
+    50% {
+        transform: translate(10px, 0px) rotate(0deg);
+    }
+    65% {
+        transform: translate(5px, 2px) rotate(-0.3deg);
+    }
+    75% {
+        transform: translate(0px, 4px) rotate(-0.6deg);
+    }
+    85% {
+        transform: translate(-5px, 2px) rotate(-0.3deg);
+    }
+}
+
+/* 4. Efeito de Interação (Opcional) */
+#botao_panico:hover {
+ /* Um amarelo levemente mais claro no hover */
+    transition: background-color 0.3s ease;
+}
+
+#botao_panico:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+#cont_panico p{
     font-size: 28pt;
     color: red;
     text-align: center;

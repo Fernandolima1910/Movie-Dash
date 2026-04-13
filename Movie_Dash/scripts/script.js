@@ -10,7 +10,9 @@ function acess_search(){
     alert("foi")
 }
 function acess_profile(){
-    alert("foi")
+
+
+    window.location.href = "./pages/perfil.html"
 }
 function acess_watchlist(){
     alert("foi")
